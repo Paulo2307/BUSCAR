@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    height: 20vh;
+    border: 2px solid white;
+}
+
+main{
+    height: 60vh;
+    border: 2px solid white;
+}
+
+footer{
+    height: 16vh;
+    border: 2px solid white;
+}
+
+h1{
+    color: white;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    font-family: fantasy;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 40px;
+    background-color: white;
+    font-family: fantasy;
+    border: 2px solid white;
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+}
