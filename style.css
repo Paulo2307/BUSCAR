@@ -1,37 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
 body{
     background-color: black;
     min-height: 100vh;
 }
-
+    
 header{
     display: flex;
+    justify-content: space-between;
     height: 20vh;
     border: 2px solid white;
 }
 
 main{
-    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80vh;
     border: 2px solid white;
 }
 
 footer{
-    height: 20vh;
-    border: 2px solid white;
+
 }
 
 h1{
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     padding-left: 30px;
-    font-family: fantasy;
+    font-family: 'Protest Guerrilla', sans-serif;
 }
 
 h2{
     color: rgb(0, 0, 0);
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-size: 40px;
     background-color: white;
-    font-family: fantasy;
+    font-family: 'Protest Guerrilla', sans-serif;
     border: 2px solid white;
 }
 
@@ -41,16 +47,29 @@ div{
     align-items: center;
 }
 
+.login-button{
+    width: 145px;
+}
+
 img{
     width: 100px;
     height: 100px;
     padding-left: 20px;
+    animation-name: car;
+    animation-duration: 2.5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes car{
+    0% {top: 0; left: 0;}
+    100% {top: 0; left: 800px;}
 }
 
 #login{
+    cursor: pointer;
     background-color: rgb(255, 255, 255);
-    position: absolute;
-    right: 50px;
     width: 100px;
     height: 50px;
     box-shadow: 1px 1px 10px red;
@@ -66,4 +85,33 @@ img{
 #login:hover{
     background-color: rgb(75, 7, 7);
     color: white;
+}
+
+#button-bsc{
+    box-shadow: 1px 1px 10px red;
+    border: red;
+    cursor: pointer;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.7s;
+}
+
+#button-bsc:hover{
+    background-color: rgb(75, 7, 7);
+    color: white;
+}
+
+input{
+    width: 500px;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+input:focus{
+    box-shadow: 1px 1px 10px red;
+    border: red;
+    outline: none;
 }
