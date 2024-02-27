@@ -2,7 +2,7 @@
 
 body{
     background-color: black;
-    min-height: 100%;
+    min-height: 100vh;
 }
     
 header{
@@ -21,7 +21,6 @@ main{
     border: 2px solid white;
 }
 
-
 h1{
     color: white;
     letter-spacing: 0.2rem;
@@ -38,7 +37,7 @@ h2{
     border: 0.2rem solid white;
 }
 
-div{
+#logo{
     display: flex;
     flex-direction: row ;
     align-items: center;
@@ -48,7 +47,7 @@ div{
     width: 8rem;
 }
 
-img{
+#carro-esporte{
     width: 6rem;
     height: 6rem;
     padding-left: 1rem;
@@ -62,6 +61,12 @@ img{
 @keyframes car{
     0% {top: 0; left: 0;}
     100% {top: 0; left: 50rem;}
+}
+
+.login-button{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
 }
 
 #login{
@@ -115,4 +120,105 @@ input:focus{
 a{
     color: white;
     font-size: 1.8rem;
+}
+
+.navbar{
+    display: none;
+}
+
+@media (max-width:800px) {
+   .login-button{
+    display: none;
+   }
+
+   .navbar{
+    display: flex;
+   }
+
+   #carro-esporte{
+    display: none;
+   }
+
+   #offcanvasNavbar{
+    margin: 0;
+    border: 2px solid white;
+   }
+
+   #offcanvas-header{
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   #burguer{
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0.1rem 0.1rem 1.4rem red;
+    transition: all 0.7s;
+   }
+
+   #burguer:hover{
+    background-color: rgb(75, 7, 7);
+    border: 2px solid rgb(75, 7, 7);
+   }
+
+   h5{
+    color: white;
+    letter-spacing: 0.2rem;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 25px;
+   }
+
+   h6{
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.2rem;
+    font-size: 25px;
+    background-color: white;
+    font-family: 'Protest Guerrilla', sans-serif;
+    border: 0.2rem solid white;
+   }
+
+   #button-bsc{
+    box-shadow: 0.1rem 0.1rem 1.4rem red;
+    border: red;
+    cursor: pointer;
+    font-family: 'Protest Guerrilla', sans-serif;
+    height: 45px;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    margin: 0.5rem;
+    transition: 0.7s;
+    }
+
+    #button-bsc:hover{
+    background-color: rgb(75, 7, 7);
+    color: white;
+    }
+
+    input{
+        width:330px;
+        height: 45px;
+        font-size: 1.2rem;
+        padding: 10px 10px;
+        margin: 1px;
+    }
+    
+    input:focus{
+        box-shadow: 0.1rem 0.1rem 1.4rem red;
+        border: red;
+        outline: none;
+    }
+
+    #login-navbar{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #login{
+        width: 210px;
+        height: 70px;
+        font-size: 25px;
+    }
+    
 }
