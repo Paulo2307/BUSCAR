@@ -127,6 +127,25 @@ a{
 }
 
 @media (max-width:800px) {
+    h1{
+        color: white;
+        font-size: 30px;
+        letter-spacing: 0.2rem;
+        padding-left: 1.5rem;
+        font-family: 'Protest Guerrilla', sans-serif;
+        align-items: center;
+    }
+    
+    h2{
+        align-items: center;
+        color: rgb(0, 0, 0);
+        letter-spacing: 0.2rem;
+        font-size: 30px;
+        background-color: white;
+        font-family: 'Protest Guerrilla', sans-serif;
+        border: 0.2rem solid white;
+    }
+
    .login-button{
     display: none;
    }
@@ -221,4 +240,130 @@ a{
         font-size: 25px;
     }
     
+}
+
+@media (max-width:460px){
+    h1{
+        color: white;
+        font-size: 20px;
+        letter-spacing: 0.2rem;
+        padding-left: 1.5rem;
+        font-family: 'Protest Guerrilla', sans-serif;
+        align-items: center;
+    }
+    
+    h2{
+        align-items: center;
+        color: rgb(0, 0, 0);
+        letter-spacing: 0.2rem;
+        font-size: 20px;
+        background-color: white;
+        font-family: 'Protest Guerrilla', sans-serif;
+        border: 0.2rem solid white;
+    }
+
+    .login-button{
+        display: none;
+       }
+    
+       .navbar{
+        display: flex;
+       }
+    
+       #carro-esporte{
+        display: none;
+       }
+    
+       #offcanvasNavbar{
+        margin: 0;
+        border: 2px solid white;
+       }
+    
+       #offcanvas-header{
+        border: 2px solid white;
+        display: flex;
+        justify-content: space-evenly;
+       }
+    
+       #burguer{
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 0.1rem 0.1rem 1.4rem red;
+        transition: all 0.7s;
+       }
+    
+       #burguer:hover{
+        background-color: rgb(75, 7, 7);
+        border: 2px solid rgb(75, 7, 7);
+       }
+    
+       h5{
+        color: white;
+        letter-spacing: 0.2rem;
+        font-family: 'Protest Guerrilla', sans-serif;
+        font-size: 25px;
+       }
+    
+       h6{
+        color: rgb(0, 0, 0);
+        letter-spacing: 0.2rem;
+        font-size: 25px;
+        background-color: white;
+        font-family: 'Protest Guerrilla', sans-serif;
+        border: 0.2rem solid white;
+       }
+
+       .tela{
+        display: flex;
+        align-items: center;
+       }
+    
+       #button-bsc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0.1rem 0.1rem 1.4rem red;
+        border: red;
+        cursor: pointer;
+        font-family: 'Protest Guerrilla', sans-serif;
+        text-align: center;
+        height: 35px;
+        width: 60px;
+        font-size: 13px;
+        padding: 10px 10px;
+        margin: 0.1rem;
+        transition: 0.7s;
+        }
+    
+        #button-bsc:hover{
+        background-color: rgb(75, 7, 7);
+        color: white;
+        }
+    
+        input{
+            width:200px;
+            height: 35px;
+            font-size: 1.2rem;
+            padding: 15px 15px;
+            margin: 2px;
+        }
+        
+        input:focus{
+            box-shadow: 0.1rem 0.1rem 1.4rem red;
+            border: red;
+            outline: none;
+        }
+    
+        #login-navbar{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+    
+        #login{
+            width: 210px;
+            height: 70px;
+            font-size: 25px;
+        }
+        
 }
